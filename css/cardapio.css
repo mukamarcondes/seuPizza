@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+* {
+  outline: none;
+  font-family: 'Kalam', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          /* color: white; */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fc0505;
+  border-radius: 20px;
+  border: 3px solid #fc0505;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1f2330a1 ;
+  /* opacity: 0.5; */
+  height: 80px;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.login {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.login:hover {
+    width: 90px;
+    transition: 0.5s;
+}
+
+.navbar .logo {
+  height: 180px;
+  width: 450px;
+  margin-left: 150px;
+}
+
+.navbar .menu-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .menu-ul li {
+  list-style-type: none;
+  margin-right: 80px;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.link-header {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.70s;
+  transition: 0.70s;
+}
+
+.link-header:hover {
+  color: #fc0505;
+  font-size: 1.2em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+@media (max-width: 1100px) {
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .container-rodape {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .institucional {
+    display: none;
+  }
+  .cardapio {
+    display: none;
+  }
+  .to-hide {
+    display: none;
+  }
+}
+
+
+.pizza2 img {
+    width: 100%;
+    /* margin: 0; */
+}
+
+
+
+.inset {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+  transform: perspective(800px) rotateY(25deg);
+}
+
+
+
+main {
+    background: rgb(31,35,48);
+    background: linear-gradient(0deg, rgba(31,35,48,1) 10%, rgba(182,39,39,1) 50%, rgba(31,35,48,1) 100%);
+    margin-top: -8px;
+    }
+/* introdução */
+
+.interno {
+    background: url(https://static.vecteezy.com/ti/fotos-gratis/p2/23574754-pizza-com-presunto-e-queijo-em-uma-preto-fundo-restaurante-ai-generativo-imagem-gratis-foto.jpg) no-repeat center center;
+    display: flex;
+    align-items: center;          
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    
+  }
+  .car {
+    height: 90px;
+    width: 350px;
+    /* border-radius: 10%; */
+    border: #fc0505 3px solid;
+    background-color: #2c2c2cbd;
+  }
+  
+  .interno .title {
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    text-align: center;
+    font-weight: bolder;
+    color: #f00808;
+    text-shadow: 0 0 20px;
+    -webkit-animation-name: gradient;
+            animation-name: gradient;
+    -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    transition: 0.7s;
+    cursor: context-menu;
+    
+  }
+
+  .title:hover {
+    transform: scale(0.8);    
+    transition: 0.7s;
+  }
+
+
+
+  .conteudo-principal {
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p2/3988049-realista-preto-madeira-prancha-fundo-vetor.jpg) no-repeat center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .conteudo-principal .container-promocoes {
+    /* visibility: hidden; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    
+  }
+  
+  .conteudo-principal .container-promocoes h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e70b0b;
+    -webkit-text-decoration: underline wavy #e70b0b;
+            text-decoration: underline wavy #e70b0b;
+  }
+  
+  .conteudo-principal .container-promocoes .box {
+    width: 250px;
+    height: 150px;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao {
+    margin-left: -50%;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao h3 {
+    font-size: 2em;
+    color: #e70b0b;
+    -webkit-text-decoration: underline wavy #e70b0b;
+            text-decoration: underline wavy #e70b0b;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao p {
+    letter-spacing: 1;
+    font-size: 1.2em;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao2 {
+    margin-right: -50%;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao2 h3 {
+    font-size: 2em;
+    color: #e70b0b;
+    -webkit-text-decoration: underline wavy #e70b0b;
+            text-decoration: underline wavy #e70b0b;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao2 p {
+    letter-spacing: 1;
+    font-size: 1.3em;
+  }
+  
+  .conteudo-principal .container-promocoes .promocao2 p i {
+    font-size: 1em;
+  }
+  
+  
+
+
+/* card */
+
+.titu{
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    /* background-color: rgba(74, 0, 0, 0.219); */
+    color: #fc0505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 3%; */
+    cursor: context-menu;
+}
+
+
+#serviços{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      /* margin-top: 2%; */
+  }
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+h1 {
+	font-size: 3vmin;
+	text-align: center;
+	color: white;
+}
+p {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	/* color: #0e390e; */
+	margin-bottom: 1.5rem;
+}
+
+
+.wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 80vmin;
+	height: 13em;
+	margin: 2rem auto;
+	border: 3px solid;
+	border-image: linear-gradient(-50deg, rgb(232, 6, 6), rgb(216, 6, 6)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: black;
+	transition: .7s ease-in-out;
+	z-index: 1;
+}
+.overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	rgb(225, 4, 4) 5%,
+      	rgba(250, 1, 1, 0.788) 35% 65%,
+      	rgb(250, 13, 13) 95%
+    	) 0 0 0 100%;
+	transition: 1s ease-in-out .6s;
+	z-index: 1;
+}
+.image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("https://img.freepik.com/fotos-premium/pizza-com-queijo-vista-superior-de-uma-pizza-margarita-generate-ai_905417-4074.jpg");
+	background-size: cover;
+	transition: .8s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.image-content2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("../img/calabresa.jpg");
+	background-size: cover;
+	transition: .8s ease-in-out;
+	/* border: 1px solid green; */
+}
+.image-content3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("../img/frango.jpg");
+	background-size: cover;
+	transition: .8s ease-in-out;
+	/* border: 1px solid green; */
+}
+.image-content4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("../img/atum.jpeg");
+	background-size: cover;
+	transition: .8s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: white;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .6s ease-in-out .3s;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 2vmin 3vmin;
+	/* background: #fff; */
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+	/* overflow-y: scroll; */
+}
+
+.wrap:hover .overlay
+ {
+	transform: translateX(-60vmin);
+}
+.wrap:hover .image-content {
+	width: 30vmin;
+}
+.wrap:hover .overlay-content {
+	border: none;
+	transition-delay: 0.5s;
+	transform: translateX(60vmin);
+}
+.wrap:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap:hover .dots .dot {
+	background: white;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.75s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+
+@media (max-width: 780px) {
+	#serviços {
+		display: flex;
+		flex-direction: column;
+
+	}
+	  }
+
+
+
+      /* inicio da footer */
+      
+/* CÓDIGO DA FOOTER  */
+.copy {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  
+    color: #b62727;
+  }
+  
+  .footer {
+    z-index: 1;
+    --footer-background:#ED5565;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 12rem;
+  }
+  body .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 1rem;
+    background: #1f2330c7;
+  }
+  body .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: #9a02029a;
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 2s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 2s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 2s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 2s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  body .footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    background: #1f2330;
+  }
+  .footer .content p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #b62727;
+  }
+   .footer .content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+   .footer .content > div > div {
+    margin: 0.25rem 0;
+  }
+   .footer .content > div > div > * {
+    margin-right: 0.5rem;
+  }
+   .footer .content > div .image {
+    align-self: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.25rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  .heading {
+    text-align: center;
+  }
